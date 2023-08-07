@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+
+<body class="bg-green">
+
+  <div class="container bg-green mt-5">
+    <div class="d-flex">
+      <h2 class="color-yellow fw-bold">JASA TITIP</h2>
+      <a href="/form-jasa-titip" class="btn btn-lg bg-yellow color-green fw-bolder home-button ms-auto ">+ Buka jastip baru</a>
+    </div>
+    <div class="thick-underline mt-3"></div>
+  
+    <div class="container">
+      <% arrPostJasaTitip.forEach(function(postJasaTitip) { %>
+        <div class="card my-4">
+          <div class="fw-bold  fs-4 color-green bg-yellow card-header"><%=postJasaTitip.namaToko%></div>
+          <div class="card-body color-green bg-yellow-light">
+            <h5 class="card-text"> <span class="fw-bold">Tanggal: </span><%=postJasaTitip.tanggal %> </h5>
+            <h5 class="card-text"> <span class="fw-bold">Waktu (WIB): </span><%=postJasaTitip.waktu %> </h5>
+            <h5 class="card-text"> <span class="fw-bold">Tujuan: </span><%=postJasaTitip.tujuan %> </h5>
+            <a class="btn fw-bold p-2 card-text btn-isi-gform" href="<%= postJasaTitip.link%>">ISI GFORM</a>
+          </div>
+        </div>
+      <%})%>
+    </div>  
+  
+  </div>
+
+</body>
