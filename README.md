@@ -2,7 +2,7 @@
 
 1. Mahasiswa ITB membutuhkan bantuan orang lain karena kesibukan yang dialaminya. Portal menyediakan 3 fitur: jasa antre, jasa titip, kuy bareng
 2. Install node js dan jalan npm install setelah melakukan clone terhadap repo ini
-3. ketik "node app.js" di terminal
+3. ketik "node app.js" di terminal, lalu buka localhost:3000 di browser
 4.
 Guntur: mendesign seluruh struktur kerangka website, app.js, style.css, portal.ejs, setup project
 Seno: kuybareng
